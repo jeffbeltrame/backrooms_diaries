@@ -1,8 +1,0 @@
-Utilizar o "para_titulos.psd" para fazer os títulos das páginas. 
-
-- botão direito na camada -> opções de mesclagem -> traçado;
-- Ctrl+A, Ctrl+X;
-- Novo arquivo, colocar mais 60px na altura e largura.
-
-Fonte utilizada nos títulos: VCR OSD Mono (baixada)
-link: https://www.dafont.com/pt/vcr-osd-mono.font

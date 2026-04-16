@@ -1,102 +1,45 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
     <head>
         <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>O Diário das Backrooms</title>
-        <style>
-            body{
-                font-family: Arial, Helvetica, sans-serif;
-                margin: 0px;
-            }
-            header{
-                background-color: rgb(190, 89, 16);
-            }
-            nav{
-                background-color: rgb(150, 67, 8);
-                height: 3.125em;
-                width: 100%;
-            }
-            .buttons{
-                display: inline-block;
-                margin: 0.625em 6.5625em 0 6.5625em;
-            }
-            .buttons:hover{
-                display: inline-block;
-                margin: 0.625em 6.5625em 0 6.5625em;
-                background-color: #52260d;
-                top:-2px;box-shadow: 0 0.1875em 0.1875em rgb(0, 0, 0)
-            }
-            .texto {
-                color: rgb(250, 250, 250);
-                text-shadow: 
-                    -0.0625em -0.0625em 0 rgb(0, 0, 0), 
-                    -0.0625em -0.0625em 0 rgb(0, 0, 0),                     
-                    0.0625em 0.0625em 0 rgb(0, 0, 0),                   
-                    0.0625em 0 0 rgb(0, 0, 0);
-                background-color: rgb(150, 67, 8);
-                padding: 1.25em;
-            }
-            .video{
-                color: red;
-                margin: 0 0 0 1em;
-                text-decoration: none;
-            }
-            .logo{
-                display: block;
-                margin: 40px auto 0 auto;
-                background-color: rgb(179, 79, 8);
-                width: 50%;  
-            }
-            footer{
-                margin: 0 0 0 1em;
-            }
-        </style>
+        <link rel="shortcut icon" href="imagens/logo.png" type="image/x-icon">
+        <link rel="stylesheet" href="css/default_style.css">
+        <link rel="stylesheet" href="css/main.css">
     </head>
-    <body background="imagens/parede.png">
+    <body>
         <header>
-            <div style="display: inline-block; margin: 0.9375em 12.5em 0.9375em 3.125em;">
-
-                <a href="index.html">
-                    <img src="imagens/logo.png" alt="Logo Diário das Backrooms" height="120em" width="120em">
-                </a>
-
-            </div>
-
-            <div style="display: inline-block;">       
-                <img src="imagens/titulo.png" alt="Título do site">
-            </div>
+            <a href="index.html">
+                <img class="logo" src="imagens/logo.png" alt="Logo Diário das Backrooms">
+            </a>
+            <h1 class="titulo">O DIÁRIO DAS BACKROOMS</h1>
         </header>
 
         <nav>
-            <a class="buttons" href="diario.html"><img src="imagens/diario.png" alt="O diário" height="30px" width="160px"></a>
-            <a class="buttons" href="niveis.html"><img src="imagens/niveis.png" alt="Níveis" height="30px" width="140px"></a>
-            <a class="buttons" href="entidades.html"><img src="imagens/entidades.png" alt="Entidades" height="30px" width="200px"></a>
-            <a class="buttons" href="grupos.html"><img src="imagens/grupos.png" alt="Grupos" height="30px" width="140px"></a>
-            <a class="buttons" href="objetos.html"><img src="imagens/objetos.png" alt="Objetos" height="30px" width="180px"></a>
+            <a class="buttons" href="arquivos.html">ARQUIVOS</a>
+            <a class="buttons" href="#">SOBRE O PROJETO</a>
+            <a class="buttons" href="#">ENVIAR RELATOS</a>
         </nav>
 
         <main>
-            <div class="logo">
-                <div style="padding: 20px 0 0 20px;"><img src="imagens/sobre.png" alt="Sobre o diário das Backrooms" height="50px" width="920px"></div>
-                <img src="imagens/logo.png" alt="Logo Diário das Backrooms" class="logo" style="width: 15em; height: 15em;">
-                <p class="texto">
-                    <b>
-                        O Diário das Backrooms é uma coletânea de relatos e histórias deixados pelos andarilhos e sobreviventes que passaram pelas backrooms.<br>
-                        Encontradas das mais diversas formas, essas histórias carregam todos os sentimentos e aflições de seus escritores, com os mais variados finais.<br><br><br> 
-                        Em "O diário", estão disponíveis os relatos e histórias dos andarilhos.<br><br>
-                        Em "Níveis", são localizadas algumas informações dos níveis relatados, para um entendimento geral, além do link que leva diretamente para a Wikidot ou Wiki Fandom, onde o nível é mais detalhado;<br><br>
-                        Em "Entidades", são localizadas algumas informações das entidades enfrentadas, além do link que leva diretamente para a Wikidot ou Wiki Fandom, onde possuem mais detalhes sobre a entidade;<br><br>
-                        Em "Grupos", são localizadas algumas informações dos grupos presentes dentro das Backrooms, além do link que leva diretamente para a Wikidot ou Wiki Fandom, com mais informações;<br><br>
-                        Em "Objetos", são localizadas algumas informações dos objetos encontrados pelos andarilhos, além do link que leva diretamente para a Wikidot ou Wiki Fandom, onde o objeto é melhor descrito.
-                    </b>
-                </p>
-            </div> 
+            <h2 class="main_titulo">SOBRE O DIÁRIO DAS BACKROOMS</h2>
+            <img class="main_logo" src="imagens/logo.png" alt="Logo Diário das Backrooms">
+            <p class="main_texto">
+                O Diário das Backrooms é uma coletânea de relatos e histórias deixados pelos andarilhos e sobreviventes que passaram pelas Backrooms. 
+                Encontradas das mais diversas formas, essas histórias carregam todos os sentimentos e aflições de seus escritores, com os mais variados finais.
+            </p>
+            <hr>
+            <p class="main_texto">ARQUIVOS: Relatos e histórias dos andarilhos que foram transcritos, detalhados e comentados.</p>
+            <hr>
+            <p class="main_texto">SOBRE O PROJETO: Informações e links sobre o projeto "O Diário das Backrooms"</p>
+            <hr>
+            <p class="main_texto">ENVIAR RELATOS: Andarilhos podem enviar relatos próprios ou encontrados durante suas viagens, para serem incluídos no diário.</p>
         </main>
-        <a class="video" href="https://www.youtube.com/watch?v=GWXl7YulntA" target="_blank">!</a>
+        <a class="easter" href="https://www.youtube.com/watch?v=GWXl7YulntA" target="_blank">!</a>
+
         <footer>
-            <p class="footer"><br><br><br><br><br>Projeto criado e desenvolvido por Jefferson Beltrame, estudante de Gestão de Tecnologia da Informação e formado em Análise e Desenvolvimento de Sistemas, com início na data de 16 de dezembro de 2022.</p>
+            <p>Projeto criado e desenvolvido por Jefferson Beltrame, com início na data de 16/12/2022. Todos os direitos reservados &reg;.</p>
         </footer>    
     </body>
 </html>
