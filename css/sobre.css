@@ -13,64 +13,42 @@ main{
     color: white;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 70%;
-    gap: 20px;
-    padding: 20px;
-    margin: 40px auto;
+    margin: 40px 0 40px 0;
+    padding: 15px;
 }
 
 .main_titulo{
+    background-color: rgb(136, 65, 15);
     font-family: 'VCR OSD Mono', monospace;
     font-size: 60px;
-    text-align: center;
     margin: 0;
-}
-
-.main_logo{
-    width: 300px;
-    height: 300px;
+    padding: 15px;
 }
 
 .main_texto{
     font-family: 'Courier Prime', 'Courier New', Courier, monospace;
     font-size: 22px;
-    margin: 0;
-    text-align: left;
-    width: 100%;
+    color: #2b2b2b;
 }
 
-main hr{
-    width: 100%;
-    border: none;
-    border-top: 2px dashed white;
-    margin: 10px 0;
-}
-
-.easter{
+main a{
     text-decoration: none;
-    color: red;
-    position: fixed; 
-    left: 15px;
-    bottom: 15px;
-    z-index: 9999;
+    color: rgb(29, 10, 201);
+}
+
+.fundo{
+    background-color: #eaddcf;
+    padding: 15px;
 }
 
 /* ------> Responsividade */
 @media (max-width: 1200px){
     main{
         margin: 30px auto;
-        gap: 15px;
     }
 
     .main_titulo{
         font-size: 40px;
-    }
-
-    .main_logo{
-        width: 200px;
-        height: 200px;
     }
 
     .main_texto{
@@ -81,16 +59,10 @@ main hr{
 @media (max-width: 970px){
     main{
         margin: 25px auto;
-        gap: 12px;
     }
 
     .main_titulo{
         font-size: 35px;
-    }
-
-    .main_logo{
-        width: 170px;
-        height: 170px;
     }
 
     .main_texto{
@@ -98,41 +70,14 @@ main hr{
     }
 }
 
-@media (max-width: 853px){
-    main{
-        margin: 20px auto;
-        gap: 9px;
-    }
-
-    .main_titulo{
-        font-size: 30px;
-    }
-}
-
-@media (max-width: 735px){
-    main{
-        margin: 15px auto;
-        gap: 5px;
-    }
-
-    .main_titulo{
-        font-size: 25px;
-    }
-}
 
 @media (max-width: 617px){
     main{
         margin: 15px auto;
-        gap: 5px;
     }
 
     .main_titulo{
-        font-size: 20px;
-    }
-
-    .main_logo{
-        width: 130px;
-        height: 130px;
+        font-size: 30px;
     }
 
     .main_texto{
