@@ -1,13 +1,3 @@
-@font-face{
-    font-family: 'VCR OSD Mono';
-    src: url('../fonte/VCR_OSD_MONO_1.001.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'Courier Prime';
-    src: url('../fonte/Courier_Prime.ttf') format('truetype');
-}
-
 main{
     background-color: rgb(172, 81, 16);
     color: white;
@@ -31,19 +21,27 @@ main{
     font-weight: bold;
 }
 
+.divisao{
+    display: flex;
+    gap: 10px;
+}
+
 main a{
    font-family: 'Courier Prime', 'Courier New', Courier, monospace;
     font-size: 20px;
     font-weight: bold;
+    background-color: rgb(218, 141, 87);
     text-decoration: none;
     color: white;
     text-decoration: none;
     transition: color 0.5s ease;
-    width: 45%;
+    margin: 5px;
+    padding: 5px;
 }
 
 main a:hover{
     color: rgb(77, 34, 3);
+    background-color: bisque;
 }
 
 .main_arquivos{
@@ -51,9 +49,12 @@ main a:hover{
     display: flex;
     flex-direction: column;
     padding: 5px;
+    width: 100%;
 }
 
-/* ------> Responsividade */
+/* =========================================
+RESPONSIVIDADE
+========================================= */
 @media (max-width: 1200px){
     main{
         margin: 30px auto;
@@ -91,7 +92,6 @@ main a:hover{
         font-size: 15px;
     }
 }
-
 
 @media (max-width: 617px){
     main{
