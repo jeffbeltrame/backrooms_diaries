@@ -33,4 +33,14 @@ Para aqueles que não estão familiarizados com o fenômeno:
 ## Status do Projeto
 
 Este é um projeto pessoal voltado para os meus estudos e portfólio. 
-O código está **aberto para visualização**, permitindo acompanhar a minha evolução técnica.
+O código está **disponível para visualização**, permitindo acompanhar a minha evolução técnica. Caso tenha alguma contribuição a fazer, sinta-se a vontade para entrar em contato comigo.
+
+---
+
+## Licença
+
+O conteúdo original deste projeto — incluindo código-fonte, design, textos, documentos fictícios e narrativas autorais — é protegido sob a licença CC BY-NC-ND 4.0.
+
+Elementos relacionados ao universo colaborativo "Backrooms" pertencem aos seus respectivos autores e comunidades.
+
+Mais informações no arquivo LICENSE.

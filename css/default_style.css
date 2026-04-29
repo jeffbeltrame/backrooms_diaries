@@ -12,7 +12,11 @@
 CONFIGURAÇÃO BACKGROUND 
 ========================================= */
 body{
-    background-image: url('../imagens/parede.png')
+    background-image: url('../imagens/parede.png');
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
 }
 
 /* =========================================
@@ -57,8 +61,8 @@ nav{
     font-family: 'VCR OSD Mono', monospace;
     font-size: 27px;
     color: white;
+    text-align: center;
     text-decoration: none;
-    background-color: rgb(136, 65, 15);
     padding: 12px 20px; 
     border-radius: 30px;
     transition: all 0.2s ease;
@@ -67,6 +71,15 @@ nav{
 .buttons:hover{
     background-color: rgb(73, 28, 3);
     box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.8);
+}
+
+
+/* =========================================
+CONFIGURAÇÃO MAIN
+========================================= */
+
+main{
+    flex: 1;
 }
 
 /* =========================================
@@ -91,6 +104,30 @@ footer{
 .menu_footer a{
     color: white;
     text-decoration: none;
+}
+
+/* =========================================
+PERSONALIZAÇÕES
+========================================= */
+
+/* -----> Páginas com temática do Th3 Sh4dy Gr3y */
+.shady{
+    background-image: url('../imagens/ShadyGrey/paredecinza.png');
+}
+.shady header{
+    background-color: rgb(90, 89, 89);
+}
+
+.shady nav{
+    background-color: rgb(51, 51, 51);
+}
+
+.shady footer{
+    background-color: rgb(51, 51, 51);
+}
+
+.shady .buttons:hover{
+    background-color: rgb(24, 24, 24)
 }
 
 /* =========================================

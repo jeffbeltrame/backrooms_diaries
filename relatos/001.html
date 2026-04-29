@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>001</title>
-    <link rel="shortcut icon" href="../imagens/logo.png" type="image/x-icon">
+    <title>001 - O diário de Jeffrey</title>
+    <link rel="shortcut icon" href="../imagens/ShadyGrey/logocinza.png" type="image/x-icon">
     <link rel="stylesheet" href="../css/default_style.css">
     <link rel="stylesheet" href="../css/conteudo.css">
 </head>
-<body>
+<body class="shady">
     <header>
         <a href="../index.html">
-            <img class="logo" src="../imagens/logo.png" alt="Logo Diário das Backrooms">
+            <img class="logo" src="../imagens/ShadyGrey/logocinza.png" alt="Logo Diário das Backrooms">
         </a>
         <h1 class="titulo">O DIÁRIO DAS BACKROOMS</h1>
     </header>
@@ -20,28 +20,29 @@
         <a class="buttons" href="../arquivos.html">ARQUIVOS</a>
         <a class="buttons" href="../sobre.html">SOBRE O PROJETO</a>
         <a class="buttons" href="../relatos.html">ENVIAR RELATOS</a>
+        <a class="buttons" href="../autorais.html">AUTORAIS</a>
     </nav>
 
     <h1 class="main_titulo"> ARQUIVO #001 - O DIÁRIO DE JEFFREY</h1> 
 
-    <main class="main_body">
-        <header class="main_header">
+    <main class="shady_body">
+        <div class="main_header">
             <section class="main_section">
                 <h2>INFORMAÇÕES INICIAIS</h2>
             
-                <p><span class="main_metadados">Autor:</span> Jeffrey (sem sobrenome) - <em>Morto</em></p>
+                <p><span class="main_metadados">Autor:</span> Jeffrey (sem sobrenome) - <em>Falecido</em></p>
                 <p><span class="main_metadados">Data do documento:</span> desconhecida</p>
                 <p><span class="main_metadados">Tipo de documento:</span> Folha de caderno rasgada</p>
                 <p><span class="main_metadados">Nível:</span> <a href="https://backrooms-wiki.wikidot.com/th3-sh4dy-gr3y" target="_blank">Th3 Sh4dy Gr3y: Nível 0zero</a></p>
                 <p><span class="main_metadados">Local de descoberta:</span> Nos corredores da base alfa da M.E.G (mais em Observações)</p>
                 <p><span class="main_metadados">Data da descoberta:</span> <time datetime="2023/01/15">15/01/2023</time></p>
-                <p><span class="main_metadados">Situação do documento:</span> <em style="color: rgb(17, 202, 17);">Completamente escaneado e arquivado nos registros</em></p>
+                <p><span class="main_metadados">Situação do documento:</span> <em class="full">Completamente escaneado e arquivado nos registros</em></p>
             </section>
             
             <section>
-                <img class="imagem_documento" src="../imagens/diario/diario1/diario1imagem.png" alt="Foto da página de caderno com o relato">
+                <img class="imagem_documento" src="../imagens/diario/001/relato.png" alt="Foto da página de caderno com o relato">
             </section>
-        </header>
+        </div>
         
         <hr>
         
@@ -81,11 +82,11 @@
         
         <hr>
         
-        <section class="observacao">
+        <section>
             <h2>OBSERVAÇÕES</h2>
             
             <p>
-                Conseguimos esse relato e as demais informações numa brecha do sistema de arquivos da M.E.G, em janeiro de 2023.
+                Consegui esse relato e as demais informações numa brecha do sistema de arquivos da M.E.G, em janeiro de 2023.
                 Este foi o único que saiu intacto. Abaixo, algumas observações que a M.E.G fez:
             </p>
 
@@ -107,11 +108,17 @@
 
     <footer>
         <div class="menu_footer">
-            <a href="../arquivos.html">Voltar</a> | <a href="relato2.html">Próximo</a>
+            <a href="../arquivos.html">Voltar</a>
         </div>
-        <p class="copyright_texto" style="text-align: center; margin-top: 10px; font-size: 0.9em;">
-            Projeto criado e desenvolvido por Jefferson Beltrame, com início na data de 16/12/2022. Todos os direitos reservados &reg;.
-        </p>  
+        
+        <p>
+            © Jefferson Beltrame, 2022-<span id="ano"></span>. <br>
+            "O Diário das Backrooms" é uma obra autoral licenciada sob CC BY-NC-ND 4.0
+        </p>
+
+        <script>
+            document.getElementById("ano").textContent = new Date().getFullYear();
+        </script>
     </footer>
 </body>  
 </html>
