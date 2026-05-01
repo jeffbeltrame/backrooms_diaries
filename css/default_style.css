@@ -80,6 +80,10 @@ CONFIGURAÇÃO MAIN
 
 main{
     flex: 1;
+    width: 90%;
+    align-self: center;
+    border-radius: 10px;
+    box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.6), 0 0 15px rgba(0, 0, 0);;
 }
 
 /* =========================================

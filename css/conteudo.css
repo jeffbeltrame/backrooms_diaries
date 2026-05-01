@@ -3,17 +3,21 @@ main{
     font-family: 'Courier Prime', 'Courier New', Courier, monospace;
     font-size: 18px;
     color: white;
-    padding: 20px;
-    margin: 0 0 20px;
+    padding: 15px;
+    margin: 0 auto 20px auto; 
+    box-sizing: border-box;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 
-.main_titulo{
+.main_titulo {
     background-color: rgb(136, 65, 15);
     font-family: 'VCR OSD Mono', monospace;
-    font-size: 30px;
+    font-size: 40px;
     color: white;
     padding: 15px;
-    margin: 20px 0 0;
+    margin: 0 0 20px 0; 
+    box-sizing: border-box;
 }
 
 .main_metadados{
@@ -29,6 +33,17 @@ main{
     gap: 30px;
 }
 
+.main_texto{
+    font-family: 'Courier Prime', 'Courier New', Courier, monospace;
+    font-size: 22px;
+    margin: 0;
+    text-align: left;
+    width: 100%;
+}
+
+.main_section{
+    padding: 1.7%;
+}
 .main_section h2 {
     margin-top: 0;
 }
@@ -41,7 +56,26 @@ main{
     border: 15px solid white; 
     width: 300px;
     height: auto;
-    margin-right: 30px;
+    border-radius: 10px;
+}
+
+.imagem_content {
+    border: 7px solid white; 
+    width: 250px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.container_img{
+    display: flex;
+    flex-direction: column;
+    gap: inherit;
+    margin-top: 4%;
+}
+
+figcaption{
+    font-size: 80%;
+    text-align: center;
 }
 
 .main_relato{
@@ -56,7 +90,34 @@ main{
     background-color: #e9e5d2;
 }
 
-.observacao h2{
+.content{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin: 0;
+    gap: 30px;
+    padding: 1.7%;
+}
+
+.content h2 {
+    margin-top: 0;
+}
+
+.content_list{
+    margin-bottom: 15px;
+}
+
+.content_sublist{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.observacoes{
+    margin: 0;
+    padding: 1.7%;
+}
+
+.observacoes h2 {
     margin-top: 0;
 }
 
@@ -121,7 +182,7 @@ PERSONALIZAÇÕES
 RESPONSIVIDADE
 ========================================= */
 @media (max-width: 1024px){
-    .main_titulo{font-size: 26px;}
+    .main_titulo{font-size: 35px;}
 
     .main_relato{font-size: 18px;}
 }
@@ -138,7 +199,13 @@ RESPONSIVIDADE
         max-width: 350px;
     }
 
-    .main_titulo{font-size: 22px; text-align: center;}
+    .content{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main_titulo{font-size: 24px; text-align: center;}
 
     .main_body{padding: 15px;}
 
@@ -153,4 +220,10 @@ RESPONSIVIDADE
     .main_relato{font-size: 15px; padding: 10px;}
 
     .imagem_documento{border-width: 10px;}
+
+    .content{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }
